@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Login from '../view/Login.vue';
 import SignUp from '../view/SignUp.vue';
 import JobPost from '../view/JobPost.vue';
@@ -6,6 +6,8 @@ import JobList from '../view/JobList.vue';
 import JobDetail from '../view/JobDetail.vue';
 import UserProfile from '../view/UserProfile.vue';
 import JobPostUpdate from '../view/JobPostUpdate.vue';
+
+
 const routes = [
   { path: '/', component: Login },
   { path: '/signup', component: SignUp },
@@ -17,7 +19,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: routes,
 });
 
